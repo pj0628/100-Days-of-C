@@ -1,0 +1,20 @@
+/*
+ * Day 81 - Q131 (Enum for Days of Week)
+ * Description: Create an enum for days (SUNDAY to SATURDAY) and print each day with its integer value.
+ * Source: https://maitysoumik.github.io/basic-coding-with-c/
+ */
+
+#include <stdio.h>
+
+enum Day { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY };
+
+int main(void) {
+    const char *names[] = {
+        "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"
+    };
+
+    for (enum Day d = SUNDAY; d <= SATURDAY; d++) {
+        printf("%s = %d\n", names[d], d);
+    }
+    return 0;
+}
